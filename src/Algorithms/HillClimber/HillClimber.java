@@ -1,5 +1,6 @@
 package Algorithms.HillClimber;
 
+
 public class HillClimber {
 	// Static method for running a hill climber with an hill climber interface.
 	public static void Run(IHillClimber iHC)
