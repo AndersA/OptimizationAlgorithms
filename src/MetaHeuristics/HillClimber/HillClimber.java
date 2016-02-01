@@ -1,5 +1,4 @@
-package Algorithms.HillClimber;
-
+package MetaHeuristics.HillClimber;
 
 public class HillClimber {
 	// Static method for running a hill climber with an hill climber interface.
