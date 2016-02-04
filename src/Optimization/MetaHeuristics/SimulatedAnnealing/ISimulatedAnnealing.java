@@ -1,4 +1,4 @@
-package MetaHeuristics.SimulatedAnnealing;
+package Optimization.MetaHeuristics.SimulatedAnnealing;
 
 public interface ISimulatedAnnealing {
 	// Get a new neighbor

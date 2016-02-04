@@ -1,4 +1,4 @@
-package MetaHeuristics.SimulatedAnnealing;
+package Optimization.MetaHeuristics.SimulatedAnnealing;
 
 public class SimulatedAnnealing {
 	
@@ -10,7 +10,7 @@ public class SimulatedAnnealing {
 			temperatur = iSA.Anneal(temperatur);
 			double current = iSA.GetCurrent();
 			double neighbor = iSA.GetNeighbor();
-			// If our probability function returns a 
+			// If probability is accepted, update current solution
 			if(iSA.GetProbability(current, neighbor, temperatur) >= Math.random())
 				iSA.UpdateCurrent();
 		}

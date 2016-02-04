@@ -1,4 +1,4 @@
-package MetaHeuristics.TabuSearch;
+package Optimization.MetaHeuristics.TabuSearch;
 
 public class TabuSearch {
 	public static void Run(ITabuSearch iTS)

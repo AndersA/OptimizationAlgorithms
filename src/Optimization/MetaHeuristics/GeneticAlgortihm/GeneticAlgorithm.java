@@ -1,4 +1,4 @@
-package MetaHeuristics.GeneticAlgortihm;
+package Optimization.MetaHeuristics.GeneticAlgortihm;
 
 public class GeneticAlgorithm {
 	

@@ -1,4 +1,4 @@
-package MetaHeuristics.HillClimber;
+package Optimization.MetaHeuristics.HillClimber;
 
 public class HillClimber {
 	// Static method for running a hill climber with an hill climber interface.

@@ -1,4 +1,4 @@
-package MetaHeuristics.TabuSearch;
+package Optimization.MetaHeuristics.TabuSearch;
 
 public interface ITabuSearch {
 	// Get current solution value

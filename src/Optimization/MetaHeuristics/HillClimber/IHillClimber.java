@@ -1,4 +1,4 @@
-package MetaHeuristics.HillClimber;
+package Optimization.MetaHeuristics.HillClimber;
 
 // Interface for a hill climber implementation.
 public interface IHillClimber {
