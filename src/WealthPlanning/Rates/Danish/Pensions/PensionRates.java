@@ -1,6 +1,5 @@
 package WealthPlanning.Rates.Danish.Pensions;
 import WealthPlanning.Rates.*;
-import WealthPlanning.DataModel.Elements.Assets.Pensions.Pension.PensionType;
 
 public class PensionRates 
 {	
@@ -8,28 +7,8 @@ public class PensionRates
 	private static Rate m_LifeAnnuity;
 	private static Rate m_LumpSum;
 	
-	// Public getter for a given year for a given pension type.
-	public static double GetRate(int year, PensionType type)
-	{
-		switch(type)
-		{
-		case Annuity:
-			return GetAnnuityRate(year);
-		case LifeAnnuity:
-			return GetLifeAnnuityRate(year);
-		case LumpSum:
-			return GetLumpSumRate(year);
-		case Life:
-		case Undefined:
-		case Invalid:
-			return -1.0;
-		}
-		
-		return -1.0;
-	}
-	
 	// Get annuity rates
-	private static double GetAnnuityRate(int year)
+	public static double GetAnnuityRate(int year)
 	{
 		// Lazy initialize rates
 		if (m_Annuity == null)
@@ -39,7 +18,7 @@ public class PensionRates
 	}
 	
 	// Get life annuity rates
-	private static double GetLifeAnnuityRate(int year)
+	public static double GetLifeAnnuityRate(int year)
 	{
 		// Lazy initialize rates
 		if(m_LifeAnnuity == null)
@@ -49,7 +28,7 @@ public class PensionRates
 	}
 	
 	// Get lump sum rates
-	private static double GetLumpSumRate(int year)
+	public static double GetLumpSumRate(int year)
 	{
 		// Lazy initialize rates
 		if(m_LumpSum == null)
